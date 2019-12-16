@@ -1,0 +1,48 @@
+.pageCanves{
+  height: 8rem;
+margin-top: 150px;
+  padding-left: 280px;
+  .picShow{
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+     View{
+      width: 100%;
+      height: 100%;
+      border-radius:50%;
+    }
+    image{
+      width: 82%;
+      height: 82%;
+      border-radius:50%;
+      margin-left: 10%;
+    }
+    .picBorder{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      top: -94%;
+      background-position: center 0;
+      background-repeat: no-repeat;
+      background-size:cover;
+      margin-left: -2px;
+    
+    }
+    .downBtn{
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: -150px;
+      .btn{
+        font-size: 40px;
+        line-height: 2.5em;
+        width: 4em;
+        color: blanchedalmond;
+        background-color: #ea8567;
+        margin: auto;
+        text-align: center;
+        border-radius: .5em;
+      }
+    }  
+  }
+}
