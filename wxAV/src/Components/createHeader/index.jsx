@@ -1,8 +1,6 @@
 import Taro,{Component} from '@tarojs/taro'
 
 import './index.scss'
-import border from '../../asset/image/classRankTitle.png'
-
 import { View , Image } from '@tarojs/components';
 
 import { connect } from '@tarojs/redux'
@@ -21,10 +19,6 @@ class CreateHeader extends Component {
       }
       this.createAv = this.createAv.bind(this)
   }
-  componentWillMount(){
-  }
-  componentDidMount(){
-  }
   createAv() {
     const ctx = Taro.createCanvasContext('header' ,this)
     const that = this
@@ -42,34 +36,36 @@ class CreateHeader extends Component {
     ctx.stroke()
     ctx.draw(false, () => {
       console.log('test')
-      Taro.canvasToTempFilePath({
-        x: 0,
-        y: 0,
-        width,
-        height,
-        destWidth: width,
-        destHeight: height,
-        canvasId: 'header',
-        success: function (res) {
-          const fileUrl = res.tempFIlePath
-          console.log(fileUrl)
-          Taro.hideLoading()
-        },
-        fail: function () {
-          console.log('faild')
-          Taro.hideLoading()
-        }
-      }, that)
-    })
+      setTimeout(() => {
+        Taro.canvasToTempFilePath({
+          x: 0,
+          y: 0,
+          width,
+          height,
+          destWidth: width,
+          destHeight: height,
+          canvasId: 'header',
+          success: function (res) {
+            const fileUrl = res.tempFIlePath
+            console.log(fileUrl)
+            Taro.hideLoading()
+          },
+          fail: function () {
+            console.log('faild')
+            Taro.hideLoading()
+          }
+        }, that)
+     
+      }, 1000);
+     })
 }
-  componentDidShow(){
 
-  }
+
   render() { 
     const {url , images , id} = this.props.counter
     return(
       <View className="pageCanves">
-        <canvas id="header"></canvas>
+        <canvas id="header" canvasId="header"></canvas>
         <View className="picShow">
           <Image src={url}></Image>
           <View
