@@ -1,16 +1,11 @@
 .pageCanves{
   height: 8rem;
-margin-top: 150px;
-  padding-left: 280px;
-  canvas{
-    display: block;
-    width: 0;
-    height: 0;
-  }
+margin-top: 25vw;
+  padding-left: 25vw;
   .picShow{
     position: absolute;
-    width: 6rem;
-    height: 6rem;
+    width: 50vw;
+    height:50vw;
      View{
       width: 100%;
       height: 100%;
@@ -33,21 +28,5 @@ margin-top: 150px;
       margin-left: -2px;
     
     }
-    .downBtn{
-      width: 100%;
-      height: auto;
-      position: relative;
-      top: -150px;
-      .btn{
-        font-size: 40px;
-        line-height: 2.5em;
-        width: 4em;
-        color: blanchedalmond;
-        background-color: #ea8567;
-        margin: auto;
-        text-align: center;
-        border-radius: .5em;
-      }
-    }  
   }
 }

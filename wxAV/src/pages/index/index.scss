@@ -1,21 +1,46 @@
 .home{
   width: 100%;
-  height:1180px;
+  height:100%;
   background-color: #ea8567;
-  background-position: center -300px;
+  background-position: center ;
   background-repeat: no-repeat;
   background-size:cover;
   .imageBox{
+    width: 100%;
     display: flex;
-    padding-top: 100px;
+    padding-top: 20vw;
    View{
-      width: 3rem;
-      height: 3rem;
+      width: 16vw;
+      height: 16vw;
       background-position: center 0;
       background-repeat: no-repeat;
       background-size:cover;
-      margin-left: 3%;
+      margin-left: 1vw;
     }
   } 
+  .downBtn{
+    width: 100%;
+    height: auto;
+    margin-top:15vw;
+    .btn{
+      font-size: 40px;
+      line-height: 2.5em;
+      width: 4em;
+      color: blanchedalmond;
+      background-color: #ea8567;
+      margin: auto;
+      text-align: center;
+      border-radius: .5em;
+    }
+  }  
+  canvas{
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    position: absolute;
+    top:-500px;
+  }
+
 
 }
