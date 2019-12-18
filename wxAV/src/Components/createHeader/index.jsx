@@ -18,7 +18,7 @@ class CreateHeader extends Component {
           <Image src={url}></Image>
           <View
             className="picBorder"
-            style={{ backgroundImage: `url(../../..${images[id]})` }}
+            style={{ backgroundImage: `url(.${images[id]})` }}
             onClick=""
           ></View>
         </View>

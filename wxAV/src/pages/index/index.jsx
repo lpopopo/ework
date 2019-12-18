@@ -92,14 +92,14 @@ class Index extends Component {
     const {images} = this.props.counter
     return(
       <View　className="home"  
-      style={{backgroundImage:`url(${homePic})`}}
+      style={{backgroundImage:`url(.${homePic})`}}
       > 
       <View className="imageBox">
         {images.map((index , id)=>{
           return(
             <View
             key={String(index)}
-            style={{backgroundImage:`url(../..${index })`}}
+            style={{backgroundImage:`url(.${index })`}}
             onClick={this.indexChange.bind(this,id)}
             ></View>
           )
